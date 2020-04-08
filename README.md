@@ -2,7 +2,7 @@
 
 ![SonarQube Logo](img/logo.png)
 
-A repository used for deploying SonarQube on a k8s cluster.
+A repository used for deploying SonarQube on Azure AKS cluster.
 
 # Usage
 

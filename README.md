@@ -296,6 +296,18 @@ PS> helm install sonarqube massimo1993/sonarqube `
       --version 5.3.2
 ```
 
+Verify that the deployment was successful, make sure that the ingress has an
+IP address allocated. You need to check that the **sonarqube-sonarqube-** pod
+is running.
+
+```
+$ kubectl get all --namespace sonarqube
+$ kubectl get ingress --namespace sonarqube
+
+NAME                  HOSTS                ADDRESS        PORTS     AGE
+sonarqube-sonarqube   sonarqube.ddns.net   192.168.65.3   80, 443   83m
+```
+
 # Acknowledgments
 
 [cert-manager Documentation](https://cert-manager.io/docs/)

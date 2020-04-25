@@ -36,9 +36,6 @@ postgresql:
   serviceAccount:
     enabled: true
     name: sonarqube-postgresql
-  networkPolicy:
-    enabled: true
-    allowExternal: false
   volumePermissions:
     securityContext:
       runAsUser: 1001

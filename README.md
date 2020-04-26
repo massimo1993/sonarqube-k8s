@@ -59,6 +59,8 @@ VolumeBindingMode:     Immediate
 Events:                <none>
 ```
 
+[Back to top](#usage)
+
 ## Deploy NGINX Ingress Controller
 
 In order to be able to expose services inside your cluster to the outside
@@ -143,6 +145,8 @@ PS> Invoke-WebRequest -Uri ${IP_ADDRESS}/healthz
 
 You should have received a **HTTP 200** OK response code. On Linux, make sure
 to use the verbose flag with curl (--verbose).
+
+[Back to top](#usage)
 
 ## Deploy cert-manager
 
@@ -253,6 +257,8 @@ PS> $certificate = kubectl get secret sonarqube-tls `
 PS> [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($certificate))
 ```
 
+[Back to top](#usage)
+
 ## Deploy SonarQube
 
 Add the massimo1993 Helm repository.
@@ -307,6 +313,8 @@ $ kubectl get ingress --namespace sonarqube
 NAME                  HOSTS                ADDRESS        PORTS     AGE
 sonarqube-sonarqube   sonarqube.ddns.net   192.168.65.3   80, 443   83m
 ```
+
+[Back to top](#usage)
 
 # Acknowledgments
 
